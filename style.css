@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+
+body {
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px;
+  direction: rtl;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-top: 40px;
+  color:  #ed276d;
+}
+
+h4 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  height: 140px;
+  font-weight: bold;
+  padding-right: 100px;
+  box-shadow: 0px 2px 2px rgba(195, 195, 195, 0.3);
+}
+ hr {
+   border: solid grey 0.5px;
+   width: 350px;
+   margin: 15px auto;
+ }
+
+ footer {
+  height: 350px;
+  width: 100%;
+  background-image: url(image/footer.svg);
+  background-size: cover;
+ }
+
+iframe{
+  padding-top:20px;
+  border: 0px;
+  height: 800px;
+}
+
+/* ====== class selector ======*/
+.container {
+  margin: 20px 20px;
+}
+
+.float-container {
+  margin-right: 70px;
+}
+.float-container ul li {
+  float: right;
+  list-style: none;
+  width: 45%;
+  padding: 0px 20px;
+}
+
+/* .li-container {
+  width: 80% !important;
+  list-style: none;
+  text-align: center;
+}*/
+
+.float-container ul .li-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 50px;
+  padding-left: 20px;
+}
+
+.table {
+  display: table;
+}
+.cell {
+  display: table-cell;
+}
+
+/* .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container p {
+  width: 40%;
+  padding: 15px 20px;
+}*/
+/* ======= ID selector =======*/
+#hero {
+  height: 700px;
+  background: url(image/banner-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#hero-headline {
+  position: absolute;
+  top: 230px;
+  right: 100px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 40%;
+  padding: 40px;
+  font-size: 3.5vw;
+  color: #ed276d;
+}
+/* == Responsive hero text banner == */
+  @media (max-width: 824px) {
+    #hero-headline {
+      font-size: 5.5vw;
+      right: 0px;
+      left: 0px;
+      width: 100%;
+      padding: 40px 0px;
+    }
+
+    .container {
+      margin: 10px 10px;
+    }
+
+    iframe {
+      height: 1400px;
+    }
+
+    p {
+      text-align: center;
+      width: 100%;
+      margin: auto;
+    }
+
+    body {
+      font-size: 16px;
+    }
+  }
+  /* == Accommodate Goal and Service section to phone screen ==*/
+  @media (max-width: 1015px) {
+    .float-container ul li {
+      float: right;
+      list-style: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .float-container {
+      margin-right: 0px;
+    }
+  }
+
+#eed-logo {
+  margin-top: 15px;
+  margin-left: 60px;
+  float: left;
+  width: 70px;
+}
+
+#white-logo {
+  display: block;
+  margin: auto;
+  width: 80px;
+  padding-top: 80px;
+}
+
+#main-menu li {
+  list-style: none;
+  float: right;
+  padding: 13px 15px;
+  margin-top: 80px;
+}
+
+#main-menu li:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: #5d5d5d;
+}
+
+#phone-menu-icon {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 30px;
+  top: 60px;
+}
+
+#phone-main-menu {
+  list-style: none;
+  font-size: 16px;
+  position: relative;
+}
+
+@media (max-width: 880px) {
+  #main-menu {
+    display: none;
+  }
+
+}
