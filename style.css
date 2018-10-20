@@ -76,12 +76,8 @@ iframe{
   padding: 0px 20px;
 }
 
-/* .li-container {
-  width: 80% !important;
-  list-style: none;
-  text-align: center;
-}*/
 
+/* Float container of the service section */
 .float-container ul .li-container {
   width: 100%;
   box-sizing: border-box;
@@ -169,26 +165,28 @@ iframe{
       margin-right: 0px;
     }
   }
-
-#eed-logo {
+/* == Header Logo == */
+#header-logo {
   margin-top: 15px;
   margin-left: 60px;
   float: left;
   width: 70px;
 }
 
-#white-logo {
+#footer-logo {
   display: block;
   margin: auto;
   width: 80px;
   padding-top: 80px;
 }
 
+/* ===== Main navbar ==== */
 #main-menu li {
   list-style: none;
   float: right;
   padding: 13px 15px;
   margin-top: 80px;
+  transition: background-color 0.35s;
 }
 
 #main-menu li:hover {
@@ -200,24 +198,76 @@ iframe{
   text-decoration: none;
   color: #5d5d5d;
 }
+/* ===== End main navbar ==== */
 
-#phone-menu-icon {
+/* === Mobile menu === */
+#mobile-menu-icon {
+  display: none;
   cursor: pointer;
-  font-size: 30px;
   position: absolute;
-  right: 30px;
+  right: 20px;
   top: 60px;
+  transition: color 0.35s;
 }
 
-#phone-main-menu {
+#mobile-menu-icon .bars div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: background-color 0.35s;
+}
+
+#mobile-menu-icon .bars:hover div {
+  background-color: darkgrey;
+}
+
+#mobile-main-menu {
+  display: none;
   list-style: none;
   font-size: 16px;
   position: relative;
+  top: 20px;
+  right: 10px;
+  background-color: rgb(250,250,250);
+  padding: 10px 20px;
+  box-shadow: 2px 2px 5px rgba(195, 195, 195, 0.3);
 }
+
+#mobile-main-menu li {
+  list-style: none;
+  padding: 13px 15px;
+  transition: background-color 0.35s;
+}
+
+#mobile-main-menu li:hover {
+background-color: #f1f1f1;
+color: black;
+}
+
+#mobile-main-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+#mobile-main-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* === End mobile menu === */
 
 @media (max-width: 880px) {
   #main-menu {
     display: none;
   }
 
+  #mobile-menu-icon {
+    display: block;
+  }
+/*
+  #mobile-menu-icon:hover #mobile-main-menu {
+    display: block;
+  }
+  */
 }

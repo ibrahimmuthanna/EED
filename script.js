@@ -22,3 +22,20 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+$(function() {
+  var menuVisible = false;
+  $('#mobile-menu-icon').click(function() {
+    if (menuVisible) {
+      $('#mobile-main-menu').css({'display':'none'});
+      menuVisible = false;
+      return;
+    }
+    $('#mobile-main-menu').css({'display':'block'});
+    menuVisible = true;
+  });
+  $('#mobile-main-menu').click(function() {
+    $(this).css({'display':'none'});
+    menuVisible = false;
+  });
+});
